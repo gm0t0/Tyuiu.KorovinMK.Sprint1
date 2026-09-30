@@ -1,5 +1,5 @@
-﻿using Tyuiu.KorovinMK.Sprint1.Task4.V22.Lib;
-namespace Tyuiu.KorovinMK.Sprint1.Task4.V22
+﻿using Tyuiu.KorovinMK.Sprint1.Task5.V3.Lib;
+namespace Tyuiu.KorovinMK.Sprint1.Task5.V3
 {
     class Program
     {
@@ -12,30 +12,29 @@ namespace Tyuiu.KorovinMK.Sprint1.Task4.V22
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* Спринт #1                                                                 *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                          *");
-            Console.WriteLine("* Задание #4                                                                *");
-            Console.WriteLine("* Вариант #22                                                               *");
+            Console.WriteLine("* Задание #5                                                               *");
+            Console.WriteLine("* Вариант #3                                                                *");
             Console.WriteLine("* Выполнил: Коровин Матвей Константинович| ИСТНб-26-1                       *");
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                  *");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,   *");
-            Console.WriteLine("* вычисляет результат по формуле и печатает его на экране.                  *");
+            Console.WriteLine("*Написать программу, которая решает следующую задачу:                       *");
+            Console.WriteLine("*   Присвоить целой переменной h третью от конца цифру в записи             *");
+            Console.WriteLine(" положительного целого числа k (например, если k=130985, то h=9).            ");
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                          *");
             Console.WriteLine("*****************************************************************************");
 
-            double x, y;
-            Console.WriteLine("Введите значение x = ");
-            x = Convert.ToDouble(Console.ReadLine());
+            int k;
+            Console.WriteLine("Введите значение k =");
+            k = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите значение y = ");
-            y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("Результат:                                                                  *");
             Console.WriteLine("*****************************************************************************");
 
-            Console.WriteLine("Ответ :" + ds.Calculate(x, y));
-            
+            Console.WriteLine("Ответ :" + ds.Calculate(k));
+
 
             Console.ReadLine();
 
