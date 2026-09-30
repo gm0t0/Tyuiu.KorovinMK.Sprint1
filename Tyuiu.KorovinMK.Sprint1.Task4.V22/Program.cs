@@ -1,5 +1,5 @@
-﻿using Tyuiu.KorovinMK.Sprint1.Task2.V1.Lib;
-namespace Tyuiu.KorovinMK.Sprint1.Task2.V1
+﻿using Tyuiu.KorovinMK.Sprint1.Task4.V22.Lib;
+namespace Tyuiu.KorovinMK.Sprint1.Task4.V22
 {
     class Program
     {
@@ -12,27 +12,30 @@ namespace Tyuiu.KorovinMK.Sprint1.Task2.V1
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* Спринт #1                                                                 *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                          *");
-            Console.WriteLine("* Задание #2                                                                *");
-            Console.WriteLine("* Вариант #1                                                               *");
+            Console.WriteLine("* Задание #3                                                                *");
+            Console.WriteLine("* Вариант #2                                                                *");
             Console.WriteLine("* Выполнил: Коровин Матвей Константинович| ИСТНб-26-1                       *");
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                  *");
-            Console.WriteLine("* Написать программу на C# которая переводит километры в мили               *");
-            Console.WriteLine("* и печатает результат на экране.                                         *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,   *");
+            Console.WriteLine("* вычисляет результат по формуле и печатает его на экране.                  *");
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                          *");
             Console.WriteLine("*****************************************************************************");
-            Console.WriteLine("* 1 км = 1,609 м                                                           *");
 
-            int x;
-            Console.WriteLine("Введите значение X км = ");
-            x = Convert.ToInt32(Console.ReadLine());
+            double x, y;
+            Console.WriteLine("Введите значение x = ");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение y = ");
+            y = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("Результат:                                                                  *");
             Console.WriteLine("*****************************************************************************");
 
-            Console.WriteLine(" X км = " + ds.ConvertKmToM(x) + " миль ");
+            Console.WriteLine("Ответ :" + ds.Calculate(x, y));
+            
 
             Console.ReadLine();
 
