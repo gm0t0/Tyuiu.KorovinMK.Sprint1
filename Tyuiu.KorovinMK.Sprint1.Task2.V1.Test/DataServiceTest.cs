@@ -8,7 +8,7 @@ namespace Tyuiu.KorovinMK.Sprint1.Task2.V1.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 1000.0;
+            int x = 1000;
             var res = ds.ConvertKmToM(x);
             Assert.AreEqual(1609, res);
 
