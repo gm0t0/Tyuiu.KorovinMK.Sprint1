@@ -6,7 +6,7 @@ namespace Tyuiu.KorovinMK.Sprint1.Task7.V6.Lib
         public double Calculate(double x, double y)
         {
             double res = Math.Pow((1 + 1 /Math.Pow(x, 2)), x) - 12 * Math.Pow(x, 2) * y;
-            return res;
+            return Math.Round(res);
         }
     }
 }
