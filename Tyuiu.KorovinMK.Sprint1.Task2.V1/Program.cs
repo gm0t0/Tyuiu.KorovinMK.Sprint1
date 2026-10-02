@@ -24,9 +24,9 @@ namespace Tyuiu.KorovinMK.Sprint1.Task2.V1
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("* 1 км = 1,609 м                                                           *");
 
-            double x;
+            int x;
             Console.WriteLine("Введите значение X км = ");
-            x = Convert.ToDouble(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("*****************************************************************************");
             Console.WriteLine("Результат:                                                                  *");
